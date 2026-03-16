@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build Velocis",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "main.c",
+                "velocis.c",
+                "-o",
+                "main.exe",
+                "-lgdi32",
+                "-lopengl32"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
